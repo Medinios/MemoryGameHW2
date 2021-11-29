@@ -11,10 +11,16 @@
             <div class="userData">
                 <input type="text" name="name" placeholder="Name">
                 <input type="text" name="name2" placeholder="Name">
+                <select name="board" id="board">
+                    <option value="4x4">4x4</option>
+                    <option value="5x5">5x5</option>
+                </select>
                 <button onclick="setUserData()">Set</button>
             </div>
             <div class="gameBoard">
-                <div class="points">Points:<span class="pointsCounter">0</span></div>
+                <div class="points">Current Player:<span class="currentPlayer"></span></div>
+                <div class="points">Points:<span class="pointsCounterPlayerA">0</span></div>
+                <div class="points">Points:<span class="pointsCounterPlayerB">0</span></div>
                 
                 <div class="cards">
                     <div class="card" id="smile">
